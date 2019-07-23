@@ -16,7 +16,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     public void registerStompEndpoints(StompEndpointRegistry stompEndpointRegistry) {
         stompEndpointRegistry.addEndpoint("/ws/endpointChat").withSockJS();
     }
-    
+
 
     @Override
     public void configureMessageBroker(MessageBrokerRegistry registry) {
